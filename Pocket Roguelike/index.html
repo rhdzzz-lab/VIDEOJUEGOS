@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pocket Roguelike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html, body { margin:0; padding:0; background:#0f172a; color:#e5e7eb; font-family: system-ui, sans-serif; }
+      canvas { display:block; margin:24px auto 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); border-radius: 12px; }
+      .hud { max-width: 640px; margin: 0 auto 24px; padding: 0 8px; line-height: 1.35; }
+      .kbd { padding: 2px 6px; border:1px solid #475569; border-bottom-width:2px; border-radius:6px; background:#111827; color:#e5e7eb; font-weight:600; }
+      .muted { color:#94a3b8 }
+    </style>
+  </head>
+  <body>
+    <!-- Usa CDN; si prefieres local, reemplaza por tu archivo p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="sketch.js"></script>
+
+    <div class="hud">
+      <p class="muted">
+        Controles: <span class="kbd">WASD</span> o flechas para moverte, <span class="kbd">G</span> para esperar un turno,
+        <span class="kbd">R</span> reinicia tras ganar/morir.
+      </p>
+    </div>
+  </body>
+</html>
